@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: #f4f4f4;
+      }
+      .container {
+        flex-grow: 1;
+        margin-left: 250px;
+        margin-top: 30px;
+        width: 80%;
+      }
+      .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #e0e0e0;
+        padding: 20px;
+      }
+      .sidebar h3 {
+        font-size: 1.5rem;
+        color: #333;
+      }
+      .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .sidebar ul li {
+        margin-bottom: 10px;
+      }
+      .sidebar ul li a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      .sidebar ul li a:hover {
+        background-color: #ccc;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .navbar {
+        background-color: #9e9e9e;
+        padding: 10px;
+        color: white;
+      }
+      .navbar h4 {
+        margin: 0;
+      }
+      .navbar .search-bar input {
+        border: 1px solid #bbb;
+        padding: 5px;
+      }
+      .card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+      .card-header {
+        font-weight: bold;
+        background-color: #e0e0e0;
+        padding: 10px;
+      }
+      .card-body {
+        padding: 15px;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .section-title {
+        margin-top: 30px;
+        font-size: 1.5rem;
+        color: #333;
+      }
+      .btn {
+        margin-right: 10px;
+      }
+      .btn-primary,
+      .btn-danger,
+      .btn-secondary {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h3>Admin Panel</h3>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Job Postings</a></li>
+        <li><a href="#">User Management</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Navbar -->
+      <div class="navbar">
+        <h4>Admin Dashboard</h4>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+        </div>
+      </div>
+
+      <!-- Site Analytics Section -->
+      <div class="section-title">Site Analytics</div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Total Users</h5>
+            </div>
+            <div class="card-body">
+              <p>1,250</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Total Job Postings</h5>
+            </div>
+            <div class="card-body">
+              <p>320</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h5>Total Applications</h5>
+            </div>
+            <div class="card-body">
+              <p>2,400</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job Postings Section -->
+      <div class="section-title">Job Postings</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <h5>Frontend Developer</h5>
+              <span>Pending Approval</span>
+            </div>
+            <div class="card-body">
+              <p>
+                Location: Nairobi | Deadline: 30th April | Salary: 120,000
+                KES/month
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Approve</button>
+              <button class="btn btn-danger">Reject</button>
+              <button class="btn btn-secondary">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <h5>Backend Developer</h5>
+              <span>Approved</span>
+            </div>
+            <div class="card-body">
+              <p>
+                Location: Nairobi | Deadline: 20th March | Salary: 100,000
+                KES/month
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary" disabled>Approved</button>
+              <button class="btn btn-danger">Reject</button>
+              <button class="btn btn-secondary">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Management Section -->
+      <div class="section-title">User Management</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <h5>John Doe - Job Seeker</h5>
+              <span>Suspended</span>
+            </div>
+            <div class="card-body">
+              <p>Email: johndoe@example.com | Role: Candidate</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Activate</button>
+              <button class="btn btn-danger">Suspend</button>
+              <button class="btn btn-secondary">View Profile</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between">
+              <h5>Jane Smith - Employer</h5>
+              <span>Active</span>
+            </div>
+            <div class="card-body">
+              <p>Email: janesmith@example.com | Role: Employer</p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary" disabled>Activated</button>
+              <button class="btn btn-danger">Suspend</button>
+              <button class="btn btn-secondary">View Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Details Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: "Roboto", sans-serif;
+      }
+      .container {
+        margin-top: 30px;
+      }
+      .job-detail-card {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #ffffff;
+        padding: 20px;
+        transition: all 0.3s ease;
+      }
+      .job-detail-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+      }
+      .job-detail-header {
+        background-color: #6c757d;
+        color: white;
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+      }
+      .job-title {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      .job-info {
+        font-size: 1rem;
+        color: #495057;
+      }
+      .job-description {
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #343a40;
+      }
+      .apply-btn {
+        background-color: #6c757d;
+        color: white;
+        border-radius: 20px;
+        margin-top: 30px;
+      }
+      .apply-btn:hover {
+        background-color: #5a6268;
+      }
+      .company-info {
+        background-color: #e9ecef;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+      .company-logo img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      .company-name {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #495057;
+      }
+      .company-details {
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+      .company-details a {
+        color: #495057;
+      }
+      .company-details a:hover {
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: #343a40">Job Details</h2>
+
+      <!-- Job Detail Card -->
+      <div class="job-detail-card">
+        <div class="job-detail-header">
+          <h5 class="job-title">Frontend Developer</h5>
+          <p class="job-info">
+            <i class="fas fa-map-marker-alt"></i> Nairobi |
+            <i class="fas fa-briefcase"></i> Development |
+            <i class="fas fa-dollar-sign"></i> 100,000 KES/month
+          </p>
+        </div>
+
+        <div class="job-description">
+          <h5>Job Description</h5>
+          <p>
+            We are looking for a passionate and experienced Frontend Developer
+            to join our dynamic team. The ideal candidate will have extensive
+            experience with HTML, CSS, JavaScript, and React. The role requires
+            a solid understanding of frontend technologies to build user
+            interfaces that are both visually appealing and functional.
+          </p>
+
+          <h5>Responsibilities</h5>
+          <ul>
+            <li>Develop high-quality front-end code</li>
+            <li>Collaborate with designers and backend developers</li>
+            <li>
+              Ensure cross-browser compatibility and mobile responsiveness
+            </li>
+            <li>Optimize applications for speed and scalability</li>
+            <li>Write unit and integration tests</li>
+          </ul>
+
+          <h5>Requirements</h5>
+          <ul>
+            <li>3+ years of experience in frontend development</li>
+            <li>Proficiency in React, HTML, CSS, JavaScript</li>
+            <li>Familiarity with version control (Git)</li>
+            <li>Strong problem-solving skills</li>
+            <li>Excellent communication skills</li>
+          </ul>
+        </div>
+
+        <button class="btn apply-btn w-100">Apply Now</button>
+      </div>
+
+      <!-- Company Info Section -->
+      <div class="company-info">
+        <div class="company-logo">
+          <img src="https://via.placeholder.com/100" alt="Company Logo" />
+        </div>
+        <div class="company-name">Company Name: Tech Solutions Ltd</div>
+        <p class="company-details">
+          <strong>Industry:</strong> Technology<br />
+          <strong>Location:</strong> Nairobi, Kenya<br />
+          <strong>Website:</strong>
+          <a href="https://www.techsolutions.com" target="_blank"
+            >www.techsolutions.com</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

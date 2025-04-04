@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recruitment Wireframe - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+      .wireframe-box {
+        border: 2px dashed #aaa;
+        padding: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: white;
+        border-radius: 8px;
+      }
+      .navbar {
+        background-color: #ddd;
+        padding: 10px;
+      }
+      .hero {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #e0e0e0;
+      }
+      .category-box {
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        transition: all 0.3s;
+      }
+      .category-box:hover {
+        background-color: #ddd;
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      .footer {
+        background-color: #ddd;
+        padding: 15px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .carousel-inner {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Recruitment</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon">☰</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jobListings.html"
+                >Job Listings Wireframe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jobDetails.html"
+                >Job Details Wireframe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="employers.html"
+                >View Employers Wireframe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Admin Portal Wireframe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="candidate.html"
+                >Applicants Dashboard Wireframe</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <section class="hero">
+      <h1>Find Your Dream Job</h1>
+      <p>Search thousands of job listings in various industries.</p>
+      <input
+        type="text"
+        class="form-control w-50 mx-auto mt-3"
+        placeholder="Search jobs..."
+      />
+    </section>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Job Categories -->
+        <div class="col-md-4">
+          <div class="category-box">Technology & IT</div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-box">Finance & Accounting</div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-box">Marketing & Sales</div>
+        </div>
+      </div>
+
+      <!-- Featured Jobs Carousel -->
+      <div id="jobCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active wireframe-box">
+            <h2>Software Developer</h2>
+            <p>Google - Remote</p>
+          </div>
+          <div class="carousel-item wireframe-box">
+            <h2>Financial Analyst</h2>
+            <p>JP Morgan - New York</p>
+          </div>
+          <div class="carousel-item wireframe-box">
+            <h2>Marketing Manager</h2>
+            <p>Coca-Cola - Atlanta</p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#jobCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#jobCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="wireframe-box mt-4">
+        <h2>Testimonials</h2>
+        <p>What job seekers & employers say about us.</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>© 2025 Recruitment Website | About Us | Contact | Terms</p>
+      </div>
+    </div>
+  </body>
+</html>
